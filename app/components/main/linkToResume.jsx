@@ -8,7 +8,7 @@ const LinkToResume = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Download FIle
+      See Resume
     </a>
   );
 };
