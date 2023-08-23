@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "next/link";
-import { FiArrowUpRight } from "react-icons/fi";
 
 const Tamarack = () => {
   return (

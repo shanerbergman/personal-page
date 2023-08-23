@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
-import ScrollLink from "./ScrollLink";
+import React from "react";
+import ScrollLink from "./scrollLink";
 import { useInViewContext } from "../context/inView";
 
 const Header = () => {
   const { inView } = useInViewContext();
-  console.log("inView", inView);
+
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col  lg:py-24">
       <div>

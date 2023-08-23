@@ -1,7 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
-import { useInView } from "../../utils/useInView";
-import { useInViewContext } from "../../context/inView";
+import React from "react";
 
 const About = () => {
   return (

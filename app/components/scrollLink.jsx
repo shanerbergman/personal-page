@@ -1,22 +1,7 @@
 "use client";
 import React from "react";
-//import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
 
 const ScrollLink = ({ link, name }) => {
-  const currentRoute = usePathname();
-
-  console.log("name", name);
   const handleScroll = (e) => {
     // first prevent the default behavior
     e.preventDefault();
@@ -33,8 +18,6 @@ const ScrollLink = ({ link, name }) => {
     elem?.scrollIntoView({
       behavior: "smooth",
     });
-
-    // router.push(`/#${targetId}`);
   };
 
   return (
@@ -45,24 +28,3 @@ const ScrollLink = ({ link, name }) => {
 };
 
 export default ScrollLink;
-/*
- <Link
-      activeClass="active"
-      to={link}
-      spy={true}
-      smooth={true}
-      offset={5000}
-      duration={500}
-      onSetActive={handleSetActive}
-    >
-      {name}
-    </Link>
-
- <Link
-      className="group flex items-center py-3 active"
-      href={link}
-      onClick={handleScroll}
-    >
-      {name}
-    </Link>
-    */
