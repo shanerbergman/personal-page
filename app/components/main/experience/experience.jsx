@@ -3,7 +3,7 @@ import Corteva from "./corteva";
 import MyAssetMap from "./myAssetMap";
 import Manhard from "./manhard";
 import Tamarack from "./tamarack";
-import LinkToResume from "./LinkToResume";
+import LinkToResume from "./linkToResume";
 
 const Experience = () => {
   return (
