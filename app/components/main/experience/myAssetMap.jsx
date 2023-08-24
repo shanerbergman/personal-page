@@ -50,7 +50,7 @@ const MyAssetMap = () => {
                   <span className="flex ml-1">
                     MyAssetMap{" "}
                     <FiArrowUpRight
-                      className={`${effect && "animate-wiggle"} ml-2`}
+                      className={`${effect && "animate-spin"} ml-2`}
                     />
                   </span>
                 </span>

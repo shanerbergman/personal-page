@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const ScrollLink = ({ link, name }) => {
+const ScrollLink = ({ link, name, inView }) => {
   const handleScroll = (e) => {
     // first prevent the default behavior
     e.preventDefault();
@@ -21,9 +21,11 @@ const ScrollLink = ({ link, name }) => {
   };
 
   return (
-    <a href={`#${link}`} onClick={handleScroll}>
-      {name}
-    </a>
+    <div className={`${inView && "animate-move"}`}>
+      <a href={`#${link}`} onClick={handleScroll}>
+        {name}
+      </a>
+    </div>
   );
 };
 

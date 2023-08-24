@@ -13,9 +13,9 @@ const About = () => {
         I started off my career as a Geographic Information Systems Analyst. I
         have always had a knack for tinkering with code and began a journey that
         started with writing simple Python scripts to developing Full Stack Web
-        Applications.With my background in GeoSpatial I tend to speacilize in
-        developing powerful Maps on the web, but I can do much more. I am always
-        learning and I love to build products for the Web.
+        Applications. With my background in GeoSpatial I tend to speacilize in
+        developing Maps for the web, but I can do much more. I am always
+        learning and I love to build.
       </p>
       <p>
         Today I work as the Lead Front End Engineer on an small team

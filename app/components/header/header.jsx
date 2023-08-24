@@ -2,7 +2,8 @@
 
 import React from "react";
 import ScrollLink from "./scrollLink";
-import { useInViewContext } from "../context/inView";
+import { useInViewContext } from "../../context/inView";
+import Social from "./social";
 
 const Header = () => {
   const { inView } = useInViewContext();
@@ -23,15 +24,23 @@ const Header = () => {
       <nav className="nav hidden lg:block">
         <ul className="mt-16 w-max">
           <li
-            className={inView?.about?.isInView ? "font-bold text-teal-300" : ""}
+            className={
+              inView?.about?.isInView
+                ? "font-bold text-teal-300 move-left header-link-active"
+                : "header-link"
+            }
           >
-            <ScrollLink link="about" name="About" />
+            <ScrollLink
+              inView={inView?.about?.isInView}
+              link="about"
+              name="About"
+            />
           </li>
           <li
             className={
               inView?.experience?.isInView && inView?.about?.isInView === false
-                ? "font-bold text-teal-300"
-                : ""
+                ? "font-bold text-teal-300 header-link-active"
+                : "header-link"
             }
           >
             <ScrollLink link="experience" name="Experience" />
@@ -40,14 +49,15 @@ const Header = () => {
             className={
               inView?.projects?.isInView &&
               inView?.experience?.isInView === false
-                ? "font-bold text-teal-300"
-                : ""
+                ? "font-bold text-teal-300 header-link-active"
+                : "header-link"
             }
           >
             <ScrollLink link="projects" name="Projects" />
           </li>
         </ul>
       </nav>
+      <Social />
     </header>
   );
 };

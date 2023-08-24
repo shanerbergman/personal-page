@@ -13,13 +13,12 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
-        wiggle: {
-          //"0%, 100%": { transform: "rotate(-360deg)" },
+        spin: {
           "100%": { transform: "rotate(360deg)" },
         },
       },
       animation: {
-        wiggle: "wiggle 1300ms ease-in-out",
+        spin: "spin 1300ms ease-in-out",
       },
     },
   },

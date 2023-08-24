@@ -51,7 +51,7 @@ const Corteva = () => {
                   <span className="flex ml-1">
                     Corteva AgriScience{" "}
                     <FiArrowUpRight
-                      className={`${effect && "animate-wiggle"} ml-2`}
+                      className={`${effect && "animate-spin"} ml-2`}
                     />
                   </span>
                 </span>
