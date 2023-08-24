@@ -36,6 +36,16 @@ const Header = () => {
           >
             <ScrollLink link="experience" name="Experience" />
           </li>
+          <li
+            className={
+              inView?.projects?.isInView &&
+              inView?.experience?.isInView === false
+                ? "font-bold text-teal-300"
+                : ""
+            }
+          >
+            <ScrollLink link="projects" name="Projects" />
+          </li>
         </ul>
       </nav>
     </header>

@@ -3,14 +3,15 @@ import React, { useRef, useEffect } from "react";
 import { useInView } from "../../utils/useInView";
 import { useInViewContext } from "../../context/inView";
 import About from "./about";
-import Experience from "./experience";
-import LinkToResume from "./linkToResume";
+import Experience from "./experience/experience";
+import Projects from "./projects/projects";
 
 const Main = () => {
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
   const { setInView } = useInViewContext();
-  const observedElements = useInView([aboutRef, experienceRef]);
+  const observedElements = useInView([aboutRef, experienceRef, projectsRef]);
 
   useEffect(() => {
     setInView(observedElements);
@@ -32,7 +33,14 @@ const Main = () => {
         className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       >
         <Experience />
-        <LinkToResume />
+      </section>
+      <section
+        ref={projectsRef}
+        id="projects"
+        name="projects"
+        className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      >
+        <Projects />
       </section>
     </main>
   );

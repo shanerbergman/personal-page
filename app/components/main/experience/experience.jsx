@@ -1,9 +1,9 @@
-"use client";
 import React from "react";
 import Corteva from "./corteva";
 import MyAssetMap from "./myAssetMap";
 import Manhard from "./manhard";
 import Tamarack from "./tamarack";
+import LinkToResume from "./LinkToResume";
 
 const Experience = () => {
   return (
@@ -18,6 +18,7 @@ const Experience = () => {
         <MyAssetMap />
         <Manhard />
         <Tamarack />
+        <LinkToResume />
       </ol>
     </>
   );
