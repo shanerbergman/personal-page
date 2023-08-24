@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main>
       <div
-        className="spotlight"
+        className="hidden lg:block"
         style={{
           position: "fixed",
           top: 0,
@@ -33,8 +33,8 @@ export default function Home() {
           pointerEvents: "none",
           background: `radial-gradient(
            circle at ${x}  ${y},
-           transparent 10%,
-           rgba(0, 0, 0, 0.25) 45%
+           transparent 20%,
+           rgba(0, 0, 0, 0.25) 30%
          )`,
         }}
       />
