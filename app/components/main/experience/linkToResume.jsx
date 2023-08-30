@@ -4,7 +4,7 @@ const LinkToResume = () => {
   return (
     <div className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group">
       <a
-        href="/ShaneBergmanResume.pdf"
+        href="/Shane_Bergman_Resume.pdf"
         alt="alt text"
         target="_blank"
         rel="noopener noreferrer"
